@@ -15,11 +15,11 @@ screen = pygame.display.set_mode((600, 600))
 player = pygame.Rect(300, 300, 15, 15)
 
 # Define random number of bottles in wave
-
 bottles = []
 
 
 def new_batch():
+    """Clear the curent bottles and builds new wave with random count"""
     bottles.clear()
     num_of_bottles = random.randint(1, 12)
 
